@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Movie Kuy!</string>
+    <string name="popular">Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="favorites">Favorites</string>
+    <string name="conn_internet">Connect to internet</string>
+    <string name="share">Share</string>
+    <string name="reviews">Reviews</string>
+    <string name="review_by">Review by %1$s</string>
+    <string name="no_review_found">No review found</string>
+    <string name="popmov">Popular Movies</string>
+    <string name="Follow">Follow Us</string>
+    <string name="Learn">Learn More</string>
+    <string name="movie">Nearest Cinema</string>
+    <string name="teks">This application is used to search for the nearest cinema
+        and popular movies chart.</string>
+    <string name="error">Error Title</string>
+    <string name="errorm">Error Message</string>
+    <string name="retry">Retry</string>
+    <string name="any_quetion_ask_us">Do you have any quetions?\nAsk us!</string>
+    <string name="send">send</string>
+    <string name="message">Message</string>
+    <string name="email">aldosyahputra1@gmail.com</string>
+    <string name="subject">Subject</string>
+    <string name="widget">Click this icon to see the most popular and top rated movies!</string>
+</resources>
