@@ -7,9 +7,9 @@
     android:orientation="vertical"
     tools:context=".ui.home">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="554dp"
+        android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:orientation="vertical">
 
@@ -17,41 +17,44 @@
             android:id="@+id/qq"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
+            android:layout_alignParentEnd="true"
             android:layout_marginTop="5dp"
             android:onClick="check"
             android:src="@drawable/baseline_help_outline_black_24dp" />
 
         <ImageView
+            android:id="@+id/ic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/qq"
+            android:layout_marginTop="16dp"
             android:src="@drawable/ss" />
 
         <TextView
+            android:id="@id/text"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:layout_marginTop="50dp"
+            android:layout_below="@id/ic"
             android:focusable="true"
             android:fontFamily="@font/abeezee"
-            android:paddingLeft="35dp"
-            android:paddingTop="20dp"
-            android:paddingRight="35dp"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/teks"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="#000"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="100dp"
-            android:gravity="center"
 
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:layout_below="@id/text"
             android:orientation="horizontal">
 
             <Button
@@ -93,19 +96,21 @@
         </LinearLayout>
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/rltv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
         android:layout_marginTop="5dp"
+
         android:orientation="horizontal">
 
         <Button
+            android:layout_alignParentStart="true"
             android:id="@+id/bthome"
+            android:layout_marginStart="10dp"
             android:layout_width="167dp"
             android:layout_height="wrap_content"
             android:focusableInTouchMode="true"
@@ -122,22 +127,24 @@
             android:textStyle="bold" />
 
         <Button
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
             android:id="@+id/maps"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:clickable="true"
             android:layout_width="167dp"
             android:layout_height="wrap_content"
             android:background="@drawable/buttonstyle"
+            android:clickable="true"
             android:drawableStart="@drawable/ic_map_black_24dp"
             android:drawablePadding="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:fontFamily="@font/audiowide"
             android:text="@string/movie"
             android:textAlignment="center"
             android:textSize="10sp"
             android:textStyle="bold" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
